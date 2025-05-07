@@ -3,16 +3,20 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    private Vector3 initialPos = Vector3.zero;
+    [SerializeField]
+    private Camera ARcamera;
+    private Vector3 initialPos;
     [SerializeField]
     private GameObject Ball;
     private GameObject currentBall;
     private Rigidbody body;
     public void ShootBall()
     {
+        initialPos = ARcamera.transform.position;
         currentBall = Instantiate(Ball, initialPos,Quaternion.identity);
         body = currentBall.GetComponent<Rigidbody>();
+        currentBall.transform.localRotation = ARcamera.transform.localRotation;
 
-        body.AddForce(new Vector3(0, 5, 10), ForceMode.Impulse);
+        body.AddForce(currentBall.transform.forward*10, ForceMode.Impulse);
     }
 }
