@@ -8,8 +8,13 @@ public class TargetActivation : MonoBehaviour
     
     public void ActiverObjet()
     {
-        meshHead = objetAAfficher.GetComponent<MeshRenderer>();
-        meshHead.enabled = true;
+        if (objetAAfficher != null)
+        {
+            meshHead = objetAAfficher.GetComponent<MeshRenderer>();
+            meshHead.enabled = true;
+        }
         
+
     }
+
 }
