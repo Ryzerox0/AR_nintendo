@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638822238228854133
+  lastModified: 638822103377263095
   FileSizes:
   - Name: Desktop
     Value: 375296
@@ -69,7 +69,7 @@ MonoBehaviour:
   - {fileID: -7605270860757699259}
   StringsBanks:
   - {fileID: 4295520902305099992}
-  cacheTime: 638822238228869142
+  cacheTime: 638822103377273100
   cacheVersion: 131624
 --- !u!114 &4295520902305099992
 MonoBehaviour:
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638822238228869142
+  lastModified: 638822103377273100
   FileSizes:
   - Name: Desktop
     Value: 786
