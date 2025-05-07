@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638822084286566260
+  lastModified: 638822103377263095
   FileSizes:
   - Name: Desktop
     Value: 375296
   Exists: 1
+--- !u!114 &-92160816770079267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/H\xE9lice/helicopter-flying-over-245480"
+  m_EditorClassIdentifier: 
+  Path: "event:/H\xE9lice/helicopter-flying-over-245480"
+  Guid:
+    Data1: -1335908142
+    Data2: 1223778531
+    Data3: -1959111545
+    Data4: 1853509056
+  Banks:
+  - {fileID: -7605270860757699259}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21400
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,41 +63,14 @@ MonoBehaviour:
   - {fileID: 4295520902305099992}
   - {fileID: -7605270860757699259}
   EditorEvents:
-  - {fileID: 2675366307323412909}
+  - {fileID: -92160816770079267}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7605270860757699259}
   StringsBanks:
   - {fileID: 4295520902305099992}
-  cacheTime: 638822084286577211
+  cacheTime: 638822103377273100
   cacheVersion: 131624
---- !u!114 &2675366307323412909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/helicopter-flying-over-245480
-  m_EditorClassIdentifier: 
-  Path: event:/helicopter-flying-over-245480
-  Guid:
-    Data1: -1335908142
-    Data2: 1223778531
-    Data3: -1959111545
-    Data4: 1853509056
-  Banks:
-  - {fileID: -7605270860757699259}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 27480
 --- !u!114 &4295520902305099992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +86,8 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638822084286577211
+  lastModified: 638822103377273100
   FileSizes:
   - Name: Desktop
-    Value: 778
+    Value: 786
   Exists: 1
