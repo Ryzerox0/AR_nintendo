@@ -17,6 +17,6 @@ public class Shoot : MonoBehaviour
         body = currentBall.GetComponent<Rigidbody>();
         currentBall.transform.localRotation = ARcamera.transform.localRotation;
 
-        body.AddForce(currentBall.transform.forward*10, ForceMode.Impulse);
+        body.AddForce(currentBall.transform.forward*3, ForceMode.Impulse);
     }
 }
