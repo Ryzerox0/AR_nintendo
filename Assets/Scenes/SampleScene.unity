@@ -757,7 +757,7 @@ MonoBehaviour:
       Data2: 1223778531
       Data3: -1959111545
       Data4: 1853509056
-    Path: event:/helicopter-flying-over-245480
+    Path: "event:/H\xE9lice/helicopter-flying-over-245480"
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -1157,7 +1157,7 @@ MonoBehaviour:
       Data2: 1223778531
       Data3: -1959111545
       Data4: 1853509056
-    Path: event:/helicopter-flying-over-245480
+    Path: "event:/H\xE9lice/helicopter-flying-over-245480"
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
