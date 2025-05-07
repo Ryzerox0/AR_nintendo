@@ -716,7 +716,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Image target
+  mTrackableName: Image target 2
   mInitializedInEditor: 1
   mDataSetPath: 
   mAspectRatio: 1
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 732014284}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Image target
+  mTargetName: Image target 2
   mDatasetName: 
   mCastedBehaviour: {fileID: 732014284}
   mMeshFilter: {fileID: 0}
