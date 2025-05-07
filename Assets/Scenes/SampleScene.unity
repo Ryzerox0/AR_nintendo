@@ -284,7 +284,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359257844}
         m_TargetAssemblyTypeName: TargetActivation, Assembly-CSharp
-        m_MethodName: ActiverObjet
+        m_MethodName: ActivateObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -296,7 +296,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 359257845}
         m_TargetAssemblyTypeName: TargetActivation, Assembly-CSharp
-        m_MethodName: ActiverObjet
+        m_MethodName: ActivateObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac78d8998482dd4b934405b9fee16db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetAAfficher: {fileID: 1396995981}
+  headToShow: {fileID: 1396995981}
 --- !u!114 &359257845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac78d8998482dd4b934405b9fee16db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetAAfficher: {fileID: 1576578973}
+  headToShow: {fileID: 1576578973}
 --- !u!114 &359257846
 MonoBehaviour:
   m_ObjectHideFlags: 0
