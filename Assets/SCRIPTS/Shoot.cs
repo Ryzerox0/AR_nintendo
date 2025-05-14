@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Shoot : MonoBehaviour
@@ -18,5 +19,6 @@ public class Shoot : MonoBehaviour
         currentBall.transform.localRotation = ARcamera.transform.localRotation;
 
         body.AddForce(currentBall.transform.forward*3, ForceMode.Impulse);
+        Destroy(currentBall, 3f);
     }
 }
