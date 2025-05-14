@@ -4,21 +4,24 @@ public class TargetActivation : MonoBehaviour
 {
     public GameObject headToShow;
     private MeshRenderer meshHead;
-    private MeshCollider colliderHead;
+    private Collider colliderHead;
+    private bool hasBeenActivated = false;
 
     private void Start()
     {
         meshHead = headToShow.GetComponent<MeshRenderer>();
-        colliderHead = headToShow.GetComponentInParent<MeshCollider>();
+        colliderHead = headToShow.GetComponentInParent<Collider>();
     }
     public void ActivateObject()
     {
-        if (headToShow != null)
+        
+        if (headToShow != null && hasBeenActivated)
         {
             colliderHead.enabled = true;
             meshHead.enabled = true;
         }
-        
+        hasBeenActivated = true;
+
 
     }
 

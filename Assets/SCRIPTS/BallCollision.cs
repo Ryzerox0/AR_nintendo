@@ -9,7 +9,5 @@ public class BallCollision : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
-
-        Debug.Log("COLLISION");
     }
 }
