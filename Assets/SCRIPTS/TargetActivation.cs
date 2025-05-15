@@ -2,23 +2,25 @@ using UnityEngine;
 
 public class TargetActivation : MonoBehaviour
 {
-    public GameObject headToShow;
     private MeshRenderer meshHead;
+    private MeshRenderer meshHelix;
     private Collider colliderHead;
     private bool hasBeenActivated = false;
 
     private void Start()
     {
-        meshHead = headToShow.GetComponent<MeshRenderer>();
-        colliderHead = headToShow.GetComponentInParent<Collider>();
+        meshHead = gameObject.GetComponent<MeshRenderer>();
+        meshHelix = gameObject.GetComponentInChildren<MeshRenderer>();
+        colliderHead = gameObject.GetComponent<Collider>();
     }
     public void ActivateObject()
     {
         
-        if (headToShow != null && hasBeenActivated)
+        if (gameObject != null && hasBeenActivated)
         {
             colliderHead.enabled = true;
             meshHead.enabled = true;
+            meshHelix.enabled = true;
         }
         hasBeenActivated = true;
 
