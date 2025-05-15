@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Head
+  - Ball
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class DetachChildren : MonoBehaviour
 
         if (!hasBeenSeen)
         {
-            await Task.Delay(2000);
+            await Task.Delay(100);
             childPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.1f, gameObject.transform.position.z);
             gameObject.transform.DetachChildren();
             child.transform.position = childPos;
