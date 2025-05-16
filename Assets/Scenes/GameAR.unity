@@ -707,7 +707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530315495}
   m_Layer: 5
-  m_Name: VictoryUI
+  m_Name: EndUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 1247021617}
   - component: {fileID: 1247021616}
   m_Layer: 5
-  m_Name: VictoryTxt
+  m_Name: EndTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1667,6 +1667,7 @@ MonoBehaviour:
   GameUI: {fileID: 561402405}
   timeDoneText: {fileID: 1946675276}
   timeLeft: {fileID: 11400000, guid: b8afd2f856818e646a28989328b42923, type: 2}
+  score: {fileID: 11400000, guid: f2d99e5a5a268f4449dee650508abc49, type: 2}
 --- !u!4 &1412122955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8017d83af98e3d54f97a7b72d5eb5957,
@@ -2371,7 +2372,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerTxt: {fileID: 1709145006}
+  endTxt: {fileID: 1247021616}
+  scoreTxt: {fileID: 1946675276}
   remainingTime: {fileID: 11400000, guid: b8afd2f856818e646a28989328b42923, type: 2}
+  endUI: {fileID: 530315494}
+  gameUI: {fileID: 561402405}
+  score: {fileID: 11400000, guid: f2d99e5a5a268f4449dee650508abc49, type: 2}
+--- !u!1 &1711699705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711699707}
+  - component: {fileID: 1711699706}
+  - component: {fileID: 1711699708}
+  m_Layer: 0
+  m_Name: SO_Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1711699706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711699705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765b7862a284b4b4880b196d5d7f74da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetValue: 90
+  valueToReset: {fileID: 11400000, guid: b8afd2f856818e646a28989328b42923, type: 2}
+--- !u!4 &1711699707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711699705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711699708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711699705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b080797448f75843b76e3a4ac59b249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetValue: 0
+  valueToReset: {fileID: 11400000, guid: f2d99e5a5a268f4449dee650508abc49, type: 2}
 --- !u!1 &1726256252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,7 +2610,7 @@ GameObject:
   - component: {fileID: 1946675277}
   - component: {fileID: 1946675276}
   m_Layer: 5
-  m_Name: TimeDoneTxt
+  m_Name: NbTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3070,3 +3137,4 @@ SceneRoots:
   - {fileID: 1431931653}
   - {fileID: 442906193}
   - {fileID: 1790943307}
+  - {fileID: 1711699707}

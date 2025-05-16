@@ -1,9 +1,9 @@
+using System.Text;
 using TMPro;
 using UnityEngine;
 
 public class BallCollision : MonoBehaviour
 {
-    private int score = 0;
     [SerializeField]
     private TMP_Text scoreTxt;
     [SerializeField]
@@ -14,17 +14,19 @@ public class BallCollision : MonoBehaviour
     private TMP_Text timeDoneText;
     [SerializeField]
     private FloatReference timeLeft;
+    [SerializeField]
+    private IntReference score;
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Ball")
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
-            score++;
-            scoreTxt.text = score.ToString();
+            score.nb++;
+            scoreTxt.text = score.nb.ToString();
         }
 
-        if(score == scoreToGet)
+        if(score.nb == scoreToGet)
         {
             victoryUI.SetActive(true);
             GameUI.SetActive(false);
@@ -34,9 +36,13 @@ public class BallCollision : MonoBehaviour
             float scoreTime = initialTime - timeLeft.nb;
             int minutes = Mathf.FloorToInt(scoreTime / 60);
             int seconds = Mathf.FloorToInt(scoreTime % 60);
-            timeDoneText.text = "In only " + minutes + " minute(s) and " + seconds+" seconds";
-            //[TODO] Changer pour un String builder
-
+            timeDoneText.text = new StringBuilder()
+                                .Append("In only ")
+                                .Append(minutes)
+                                .Append(" minute(s) and ")
+                                .Append(seconds)
+                                .Append(" seconds")
+                                .ToString();
 
         }
     }
