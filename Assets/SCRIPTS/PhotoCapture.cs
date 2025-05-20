@@ -41,7 +41,7 @@ public class PhotoCapture : MonoBehaviour
         {
             for (int x = 0; x < width; x++)
             {
-                rotated.SetPixel(height - y - 1, x, original.GetPixel(x, y));
+                rotated.SetPixel(y, width - x - 1, original.GetPixel(x, y));
             }
         }
         rotated.Apply();
