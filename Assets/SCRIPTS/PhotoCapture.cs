@@ -1,12 +1,16 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Vuforia;
 
 public class PhotoCapture : MonoBehaviour
 {
-    public GameObject targetObject;
+    //public GameObject targetObject;
+    public List<GameObject> headList;
     public Button captureButton;
     private bool isReady = false;
+
 
     void Start()
     {
@@ -46,16 +50,21 @@ public class PhotoCapture : MonoBehaviour
         }
         rotated.Apply();
 
-        Renderer rend = targetObject.GetComponent<Renderer>();
-
-        Material[] materials = rend.materials;
-        for (int i = 0; i < materials.Length; i++)
+        foreach(GameObject head in headList)
         {
-            if (materials[i].name.Contains("visage"))
+            //Renderer rend = head.GetComponent<Renderer>();
+            Material[] materials = head.GetComponent<Renderer>().materials;
+            for (int i = 0; i < materials.Length; i++)
             {
-                materials[i].mainTexture = rotated;
-                return;
+                if (materials[i].name.Contains("visage"))
+                {
+                    materials[i].mainTexture = rotated;
+                    break;
+                }
             }
         }
+       
+
+        
     }
 }
