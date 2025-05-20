@@ -4,6 +4,7 @@ using UnityEngine;
 public class TargetActivation : MonoBehaviour
 {
     private Collider colliderHead;
+    private MeshRenderer meshRend;
     private bool hasBeenActivated = false;
     public List<GameObject> headList;
     public IntReference scoreToGet;
@@ -14,14 +15,19 @@ public class TargetActivation : MonoBehaviour
     }
     public void ActivateObject()
     {
-        if (gameObject != null && hasBeenActivated)
+        if (hasBeenActivated)
         {
-            foreach(GameObject head in headList)
+            foreach (GameObject head in headList)
             {
-               head.GetComponent<MeshRenderer>().enabled = true;
-               colliderHead = head.GetComponent<Collider>();
-               if(colliderHead != null)
-                    colliderHead.enabled = true;
+                if (head != null)
+                {
+                    meshRend = head.GetComponent<MeshRenderer>();
+                    colliderHead = head.GetComponent<Collider>();
+                    meshRend.enabled = true;
+                    if (colliderHead != null)
+                        colliderHead.enabled = true;
+                }
+
             }
         }
         hasBeenActivated = true;
