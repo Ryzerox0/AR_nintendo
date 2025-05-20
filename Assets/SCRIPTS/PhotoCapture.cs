@@ -21,7 +21,6 @@ public class PhotoCapture : MonoBehaviour
     void OnVuforiaStarted()
     {
         VuforiaBehaviour.Instance.CameraDevice.SetFrameFormat(PixelFormat.RGB888, true);
-        isReady = true;
     }
 
     void CapturePhotoAndApply()
@@ -37,12 +36,15 @@ public class PhotoCapture : MonoBehaviour
         original.Apply();
 
 
-        Texture2D flipped = new Texture2D(width, height, TextureFormat.RGB24, false);
+        Texture2D rotated = new Texture2D(height, width, TextureFormat.RGB24, false);
         for (int y = 0; y < height; y++)
         {
-            flipped.SetPixels(0, y, width, 1, original.GetPixels(0, height - y - 1, width, 1));
+            for (int x = 0; x < width; x++)
+            {
+                rotated.SetPixel(height - y - 1, x, original.GetPixel(x, y));
+            }
         }
-        flipped.Apply();
+        rotated.Apply();
 
         Renderer rend = targetObject.GetComponent<Renderer>();
 
@@ -51,7 +53,7 @@ public class PhotoCapture : MonoBehaviour
         {
             if (materials[i].name.Contains("visage"))
             {
-                materials[i].mainTexture = flipped;
+                materials[i].mainTexture = rotated;
                 return;
             }
         }
