@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638833496497783557
+  lastModified: 638833673736072301
   FileSizes:
   - Name: Desktop
-    Value: 2941504
+    Value: 2945856
   Exists: 1
 --- !u!114 &-92160816770079267
 MonoBehaviour:
@@ -95,12 +95,13 @@ MonoBehaviour:
   - {fileID: 4020799308793040096}
   - {fileID: 714781689700973425}
   - {fileID: 5778970772518366482}
+  - {fileID: 4345564096270870847}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7605270860757699259}
   StringsBanks:
   - {fileID: 4295520902305099992}
-  cacheTime: 638833496497793569
+  cacheTime: 638833673736072301
   cacheVersion: 131624
 --- !u!114 &714781689700973425
 MonoBehaviour:
@@ -171,11 +172,38 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638833496497793569
+  lastModified: 638833673736072301
   FileSizes:
   - Name: Desktop
-    Value: 1068
+    Value: 1124
   Exists: 1
+--- !u!114 &4345564096270870847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Photo/camera-shutter-6305
+  m_EditorClassIdentifier: 
+  Path: event:/Photo/camera-shutter-6305
+  Guid:
+    Data1: -811866148
+    Data2: 1129556453
+    Data3: 2117363365
+    Data4: -1866859626
+  Banks:
+  - {fileID: -7605270860757699259}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 339
 --- !u!114 &5778970772518366482
 MonoBehaviour:
   m_ObjectHideFlags: 0
