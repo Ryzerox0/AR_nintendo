@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,10 +5,8 @@ using Vuforia;
 
 public class PhotoCapture : MonoBehaviour
 {
-    //public GameObject targetObject;
     public List<GameObject> headList;
     public Button captureButton;
-    private bool isReady = false;
 
 
     void Start()
@@ -52,7 +49,6 @@ public class PhotoCapture : MonoBehaviour
 
         foreach(GameObject head in headList)
         {
-            //Renderer rend = head.GetComponent<Renderer>();
             Material[] materials = head.GetComponent<Renderer>().materials;
             for (int i = 0; i < materials.Length; i++)
             {
