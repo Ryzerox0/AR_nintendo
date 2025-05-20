@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 521551682}
   - component: {fileID: 521551681}
   - component: {fileID: 521551686}
+  - component: {fileID: 521551687}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -697,6 +698,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &521551687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521551680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -56528130
+      Data2: 1235693228
+      Data3: -1575052626
+      Data4: 1852171315
+    Path: event:/Ambience/Final Boss Theme 1 - Face Raiders
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &530315494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1032,7 @@ GameObject:
   - component: {fileID: 1008186642}
   - component: {fileID: 1008186641}
   - component: {fileID: 1008186640}
+  - component: {fileID: 1008186643}
   m_Layer: 5
   m_Name: Shoot
   m_TagString: Untagged
@@ -1083,6 +1116,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1008186643}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1008186641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1166,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008186638}
   m_CullTransparentMesh: 1
+--- !u!114 &1008186643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008186638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1806846956
+      Data2: 1140685732
+      Data3: -502984317
+      Data4: -512895287
+    Path: event:/Ball/mixkit-hitting-golf-ball-2080
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1011047045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +2008,7 @@ GameObject:
   - component: {fileID: 1456383980}
   - component: {fileID: 1456383979}
   - component: {fileID: 1456383978}
+  - component: {fileID: 1456383981}
   m_Layer: 5
   m_Name: Ok
   m_TagString: Untagged
@@ -2027,6 +2104,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1456383981}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1456383979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,6 +2154,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456383976}
   m_CullTransparentMesh: 1
+--- !u!114 &1456383981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456383976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 760203298
+      Data2: 1264694037
+      Data3: 1583518103
+      Data4: 1120817504
+    Path: event:/Button/button-click-289742
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1611099691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +2921,7 @@ GameObject:
   - component: {fileID: 1978964239}
   - component: {fileID: 1978964238}
   - component: {fileID: 1978964241}
+  - component: {fileID: 1978964242}
   m_Layer: 5
   m_Name: Ok
   m_TagString: Untagged
@@ -2884,6 +3005,18 @@ MonoBehaviour:
           m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1978964242}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1978964239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,6 +3067,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c780eb27b1596524fa740fe9311a60f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1978964242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978964236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 760203298
+      Data2: 1264694037
+      Data3: 1583518103
+      Data4: 1120817504
+    Path: event:/Button/button-click-289742
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2133017537
 PrefabInstance:
   m_ObjectHideFlags: 0
