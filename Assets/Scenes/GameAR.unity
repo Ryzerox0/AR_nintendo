@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 359257841}
   - component: {fileID: 359257846}
   - component: {fileID: 359257847}
+  - component: {fileID: 359257848}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -413,22 +414,22 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 359257846}
-        m_TargetAssemblyTypeName: DetachChildren, Assembly-CSharp
-        m_MethodName: DetachChild
-        m_Mode: 2
+      - m_Target: {fileID: 359257847}
+        m_TargetAssemblyTypeName: TargetActivation, Assembly-CSharp
+        m_MethodName: ActivateObject
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1396995981}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &359257842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +456,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 359257847}
+  mPreview: {fileID: 359257848}
 --- !u!4 &359257843
 Transform:
   m_ObjectHideFlags: 0
@@ -485,6 +486,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &359257847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359257840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac78d8998482dd4b934405b9fee16db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headList:
+  - {fileID: 1396995981}
+  - {fileID: 1072738144}
+  scoreToGet: {fileID: 11400000, guid: be53ea5656c48a64cbc8a90bba9f7f18, type: 2}
+--- !u!114 &359257848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1718,18 +1735,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.9122774
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1396995989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396995981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bac78d8998482dd4b934405b9fee16db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1396995992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,13 +1748,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTxt: {fileID: 6140332661803191588}
-  scoreToGet: 1
   initialTime: 90
   victoryUI: {fileID: 530315494}
   GameUI: {fileID: 561402405}
   timeDoneText: {fileID: 1946675276}
   timeLeft: {fileID: 11400000, guid: b8afd2f856818e646a28989328b42923, type: 2}
   score: {fileID: 11400000, guid: f2d99e5a5a268f4449dee650508abc49, type: 2}
+  scoreToGet: {fileID: 11400000, guid: be53ea5656c48a64cbc8a90bba9f7f18, type: 2}
 --- !u!95 &1396995993
 Animator:
   serializedVersion: 7
@@ -1882,6 +1887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: heliceAR
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8017d83af98e3d54f97a7b72d5eb5957,
+        type: 3}
+      propertyPath: m_TagString
+      value: Helix
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3109,17 +3119,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 31d623754beedbb4cace968d376ad3fa,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.050000004
+      value: 0.049999997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31d623754beedbb4cace968d376ad3fa,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.050000004
+      value: 0.049999997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31d623754beedbb4cace968d376ad3fa,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.050000004
+      value: 0.049999997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31d623754beedbb4cace968d376ad3fa,
         type: 3}
@@ -3198,10 +3208,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1396995988}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31d623754beedbb4cace968d376ad3fa,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1396995989}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31d623754beedbb4cace968d376ad3fa,
         type: 3}
       insertIndex: -1

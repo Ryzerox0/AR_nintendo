@@ -7,7 +7,7 @@ public class BallCollision : MonoBehaviour
     [SerializeField]
     private TMP_Text scoreTxt;
     [SerializeField]
-    private int scoreToGet, initialTime;
+    private int initialTime;
     [SerializeField]
     private GameObject victoryUI, GameUI;
     [SerializeField]
@@ -15,7 +15,7 @@ public class BallCollision : MonoBehaviour
     [SerializeField]
     private FloatReference timeLeft;
     [SerializeField]
-    private IntReference score;
+    private IntReference score, scoreToGet;
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Ball")
@@ -26,7 +26,7 @@ public class BallCollision : MonoBehaviour
             scoreTxt.text = score.nb.ToString();
         }
 
-        if(score.nb == scoreToGet)
+        if(score.nb == scoreToGet.nb)
         {
             victoryUI.SetActive(true);
             GameUI.SetActive(false);
