@@ -974,14 +974,14 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Image target
+  mTrackableName: Capture_decran_2025-05-20_210309
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1
+  mAspectRatio: 0.7952548
   mImageTargetType: 3
   mWidth: 0.2
-  mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: 142c69970fcb361408f8f5a8ead78d1f, type: 3}
+  mHeight: 0.15905097
+  mRuntimeTexture: {fileID: 2800000, guid: 7d9402d4d9891ed4aa18eb8d2e424358, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 359257842}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Image target
+  mTargetName: Capture_decran_2025-05-20_210309
   mDatasetName: 
   mCastedBehaviour: {fileID: 359257842}
   mMeshFilter: {fileID: 0}
