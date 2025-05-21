@@ -6,17 +6,11 @@ using Vuforia;
 public class PhotoCapture : MonoBehaviour
 {
     public List<GameObject> headList;
-    public Button captureButton;
 
 
     void Start()
     {
         VuforiaApplication.Instance.OnVuforiaStarted += OnVuforiaStarted;
-
-        if (captureButton != null)
-        {
-            captureButton.onClick.AddListener(CapturePhotoAndApply);
-        }
     }
 
     void OnVuforiaStarted()
@@ -24,7 +18,7 @@ public class PhotoCapture : MonoBehaviour
         VuforiaBehaviour.Instance.CameraDevice.SetFrameFormat(PixelFormat.RGB888, true);
     }
 
-    void CapturePhotoAndApply()
+    public void CapturePhotoAndApply()
     {
         Vuforia.Image image = VuforiaBehaviour.Instance.CameraDevice.GetCameraImage(PixelFormat.RGB888);
 
@@ -46,7 +40,7 @@ public class PhotoCapture : MonoBehaviour
             }
         }
         rotated.Apply();
-
+        
         foreach(GameObject head in headList)
         {
             Material[] materials = head.GetComponent<Renderer>().materials;
