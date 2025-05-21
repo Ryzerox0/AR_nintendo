@@ -1209,6 +1209,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1617424804}
+        m_TargetAssemblyTypeName: PhotoCapture, Assembly-CSharp
+        m_MethodName: CapturePhotoAndApply
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &410337985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3881,7 +3893,6 @@ MonoBehaviour:
   - {fileID: 556872192}
   - {fileID: 113192960}
   - {fileID: 1835499116}
-  captureButton: {fileID: 410337984}
 --- !u!4 &1617424805
 Transform:
   m_ObjectHideFlags: 0
