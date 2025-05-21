@@ -1548,7 +1548,7 @@ MonoBehaviour:
       Data2: 1235693228
       Data3: -1575052626
       Data4: 1852171315
-    Path: event:/Ambience/Final Boss Theme 1 - Face Raiders
+    Path: event:/Ambiance/Final Boss Theme 1 - Face Raiders
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2

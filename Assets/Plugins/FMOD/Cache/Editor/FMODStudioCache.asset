@@ -42,11 +42,38 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638833722392517164
+  lastModified: 638834146300033494
   FileSizes:
   - Name: Desktop
     Value: 2998528
   Exists: 1
+--- !u!114 &-6684085543740701245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/Final Boss Theme 1 - Face Raiders
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Final Boss Theme 1 - Face Raiders
+  Guid:
+    Data1: -56528130
+    Data2: 1235693228
+    Data3: -1575052626
+    Data4: 1852171315
+  Banks:
+  - {fileID: -7605270860757699259}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 118334
 --- !u!114 &-92160816770079267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,15 +121,15 @@ MonoBehaviour:
   - {fileID: -8402742172247190469}
   - {fileID: 4020799308793040096}
   - {fileID: 714781689700973425}
-  - {fileID: 5778970772518366482}
   - {fileID: 4345564096270870847}
   - {fileID: 9042942728052907589}
+  - {fileID: -6684085543740701245}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7605270860757699259}
   StringsBanks:
   - {fileID: 4295520902305099992}
-  cacheTime: 638833722392527550
+  cacheTime: 638834146300043461
   cacheVersion: 131624
 --- !u!114 &714781689700973425
 MonoBehaviour:
@@ -173,7 +200,7 @@ MonoBehaviour:
   Path: ../AR_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638833722392527550
+  lastModified: 638834146300043461
   FileSizes:
   - Name: Desktop
     Value: 1180
@@ -205,33 +232,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 339
---- !u!114 &5778970772518366482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Final Boss Theme 1 - Face Raiders
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Final Boss Theme 1 - Face Raiders
-  Guid:
-    Data1: -56528130
-    Data2: 1235693228
-    Data3: -1575052626
-    Data4: 1852171315
-  Banks:
-  - {fileID: -7605270860757699259}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 118334
 --- !u!114 &9042942728052907589
 MonoBehaviour:
   m_ObjectHideFlags: 0
